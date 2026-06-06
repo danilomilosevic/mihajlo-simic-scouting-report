@@ -1,0 +1,206 @@
+/* ── Reset & base ─────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+  line-height: 1.6;
+}
+
+/* ── Header ───────────────────────────────────── */
+header {
+  background: linear-gradient(135deg, #c00 0%, #1a1a2e 100%);
+  text-align: center;
+  padding: 48px 16px 36px;
+  border-bottom: 4px solid #c00;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+header .subtitle {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #aaa;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ── Main layout ──────────────────────────────── */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* ── Card (BOX model demo) ────────────────────── */
+.card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 28px 32px;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #c00;
+  margin-bottom: 18px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #30363d;
+}
+
+/* ── Bio list ─────────────────────────────────── */
+.bio-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bio-list li {
+  display: flex;
+  gap: 10px;
+}
+
+.label {
+  color: #8b949e;
+  min-width: 175px;
+  flex-shrink: 0;
+}
+
+/* ── Positions table ──────────────────────────── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 4px;
+}
+
+th {
+  background: #21262d;
+  color: #8b949e;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 14px;
+  text-align: left;
+}
+
+td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #21262d;
+  vertical-align: middle;
+}
+
+tr.primary td {
+  background: #1a0a0a;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* position badges */
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.badge.lb  { background: #c00;    color: #fff; }
+.badge.cdm { background: #1d4ed8; color: #fff; }
+.badge.cam { background: #15803d; color: #fff; }
+
+.table-note {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+/* ── School card list ─────────────────────────── */
+.school ul {
+  list-style: disc;
+  padding-left: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ── Gallery grid ─────────────────────────────── */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.gallery-grid figure {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-grid figcaption {
+  padding: 8px 10px;
+  font-size: 0.8rem;
+  color: #8b949e;
+}
+
+/* ── Video grid ───────────────────────────────── */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 20px;
+}
+
+.video-grid figure {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.video-grid video {
+  width: 100%;
+  display: block;
+}
+
+.video-grid figcaption {
+  padding: 8px 10px;
+  font-size: 0.8rem;
+  color: #8b949e;
+}
+
+/* ── Footer ───────────────────────────────────── */
+footer {
+  text-align: center;
+  padding: 28px 16px;
+  font-size: 0.8rem;
+  color: #555;
+  border-top: 1px solid #21262d;
+  margin-top: 40px;
+}
